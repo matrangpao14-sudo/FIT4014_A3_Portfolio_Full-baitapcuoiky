@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pao Studio | Portfolio & Art Print Store</title>
+    <!-- Liên kết file CSS tách riêng đúng chuẩn cấu trúc HTML5/CSS3 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ================= HEADER & NAVIGATION ================= -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-dot"></span>
+                <span>pao Studio</span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Trang chủ</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#store" class="nav-link">Cửa hàng ấn phẩm</a>
+                <a href="#about" class="nav-link">Về tôi</a>
+                <a href="#contact" class="nav-link">Liên hệ</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="cart-btn" id="openCartBtn" aria-label="Mở giỏ hàng">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-badge" id="cartCount">0</span>
+                </button>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="badge-tag">UI/UX Designer & Illustrator</span>
+                <h1>Biến ý tưởng sáng tạo thành trải nghiệm số & ấn phẩm nghệ thuật</h1>
+                <p>Xin chào, tôi là <strong>Ma Tráng Pao</strong> (MSV: <strong>2071020150</strong>). Đây là không gian trưng bày các dự án thiết kế tiêu biểu và cửa hàng ấn phẩm nghệ thuật độc bản.</p>
+                <div class="hero-btns">
+                    <a href="#store" class="btn btn-primary">Khám phá cửa hàng</a>
+                    <a href="#portfolio" class="btn btn-outline">Xem dự án Portfolio</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>25+</h3>
+                        <p>Dự án hoàn thành</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>120+</h3>
+                        <p>Ấn phẩm đã bán</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Thiết kế độc bản</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card-mockup">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Nghệ thuật trừu tượng hiện đại">
+                    <div class="floating-card">
+                        <span class="status-dot"></span>
+                        <div>
+                            <strong>Sẵn sàng nhận dự án</strong>
+                            <small>Freelance & Hợp tác thiết kế</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PORTFOLIO SECTION ================= -->
+    <section id="portfolio" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">DỰ ÁN TIÊU BIỂU</span>
+                <h2>Bộ Sưu Tập Portfolio</h2>
+                <p>Các dự án thiết kế giao diện web, nhận diện thương hiệu và minh họa kỹ thuật số.</p>
+            </div>
+
+            <!-- Bộ lọc danh mục Portfolio -->
+            <div class="filter-bar" id="portfolioFilters">
+                <button class="filter-btn active" data-filter="all">Tất cả</button>
+                <button class="filter-btn" data-filter="uiux">UI/UX Design</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="illustration">Minh họa</button>
+            </div>
+
+            <div class="grid-3" id="portfolioGrid">
+                <!-- Item 1 -->
+                <article class="card portfolio-card" data-category="uiux">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Dashboard Fintech">
+                        <span class="card-badge">UI/UX Design</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Ứng dụng Quản lý Tài chính FinFlow</h3>
+                        <p>Thiết kế trải nghiệm người dùng và hệ thống Design System cho ứng dụng quản lý chi tiêu cá nhân.</p>
+                        <button class="btn-link view-detail-btn" 
+                                data-title="Ứng dụng Quản lý Tài chính FinFlow" 
+                                data-category="UI/UX Design"
+                                data-img="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+                                data-desc="Dự án thiết kế trọn bộ giao diện Mobile App & Web Dashboard giúp người dùng theo dõi dòng tiền, lập ngân sách thông minh. Sử dụng Figma và kiểm thử khả năng sử dụng với 30 người dùng thực tế.">
+                            Xem chi tiết →
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Item 2 -->
+                <article class="card portfolio-card" data-category="branding">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=600&q=80" alt="Branding Cà phê">
+                        <span class="card-badge">Branding</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Nhận diện thương hiệu Kafe Mộc</h3>
+                        <p>Xây dựng logo, bao bì túi cà phê và bộ ấn phẩm truyền thông mang phong cách tối giản bền vững.</p>
+                        <button class="btn-link view-detail-btn"
+                                data-title="Nhận diện thương hiệu Kafe Mộc"
+                                data-category="Branding"
+                                data-img="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=800&q=80"
+                                data-desc="Bộ nhận diện thương hiệu toàn diện cho chuỗi cà phê rang xay thủ công. Bao gồm thiết kế logo, bảng màu đất, typography và hệ thống bao bì giấy tái chế.">
+                            Xem chi tiết →
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Item 3 -->
+                <article class="card portfolio-card" data-category="illustration">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=600&q=80" alt="Tranh minh họa">
+                        <span class="card-badge">Minh họa</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Bộ tranh Phố Cổ & Sắc Màu</h3>
+                        <p>Series tranh minh họa kỹ thuật số lấy cảm hứng từ kiến trúc và nhịp sống đô thị Việt Nam.</p>
+                        <button class="btn-link view-detail-btn"
+                                data-title="Bộ tranh Phố Cổ & Sắc Màu"
+                                data-category="Minh họa kỹ thuật số"
+                                data-img="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=800&q=80"
+                                data-desc="Bộ sưu tập gồm 12 bức tranh vẽ tay trên Procreate và Illustrator, tái hiện góc nhìn đương đại về những con phố nhỏ kết hợp bảng màu rực rỡ.">
+                            Xem chi tiết →
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= STORE SECTION (BÁN HÀNG) ================= -->
+    <section id="store" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">ART PRINT & DIGITAL ASSETS</span>
+                <h2>Cửa Hàng Ấn Phẩm Nghệ Thuật</h2>
+                <p>Sở hữu các bản in nghệ thuật chất lượng cao (Fine Art Print) và bộ UI Kit độc quyền.</p>
+            </div>
+
+            <div class="grid-3" id="productGrid">
+                <!-- Product 1 -->
+                <div class="card product-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=600&q=80" alt="Tranh trừu tượng Bình Minh">
+                        <span class="price-tag">350.000₫</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="product-cat">Tranh in khổ A3</span>
+                        <h3>Bản in "Bình Minh Nhiệt Đới"</h3>
+                        <p>In trên giấy mỹ thuật Hahnemühle 300gsm, kèm chữ ký tay của tác giả.</p>
+                        <button class="btn btn-primary btn-full add-to-cart-btn" 
+                                data-id="sp1" 
+                                data-name="Bản in Bình Minh Nhiệt Đới (A3)" 
+                                data-price="350000"
+                                data-img="https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=200&q=80">
+                            + Thêm vào giỏ hàng
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="card product-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=600&q=80" alt="Tranh Tối Giản Hình Học">
+                        <span class="price-tag">420.000₫</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="product-cat">Tranh đóng khung</span>
+                        <h3>Bản in "Cân Bằng Hình Học"</h3>
+                        <p>Tranh nghệ thuật tối giản kèm khung gỗ sồi tự nhiên kích thước 40x50cm.</p>
+                        <button class="btn btn-primary btn-full add-to-cart-btn"
+                                data-id="sp2"
+                                data-name="Bản in Cân Bằng Hình Học (Khung gỗ)"
+                                data-price="420000"
+                                data-img="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=200&q=80">
+                            + Thêm vào giỏ hàng
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="card product-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=600&q=80" alt="Bộ UI Kit E-Commerce">
+                        <span class="price-tag">290.000₫</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="product-cat">Tài nguyên số (Figma)</span>
+                        <h3>Bộ Minimalist E-Commerce UI Kit</h3>
+                        <p>Hơn 80 màn hình thiết kế sẵn, hệ thống Auto-layout và Dark/Light mode.</p>
+                        <button class="btn btn-primary btn-full add-to-cart-btn"
+                                data-id="sp3"
+                                data-name="Minimalist E-Commerce UI Kit"
+                                data-price="290000"
+                                data-img="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=200&q=80">
+                            + Thêm vào giỏ hàng
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="card product-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Túi Tote Nghệ Thuật">
+                        <span class="price-tag">180.000₫</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="product-cat">Phụ kiện Canvas</span>
+                        <h3>Túi Tote Canvas "Creative Mind"</h3>
+                        <p>Vải canvas dày dặn 14oz, in lụa thủ công họa tiết độc quyền.</p>
+                        <button class="btn btn-primary btn-full add-to-cart-btn"
+                                data-id="sp4"
+                                data-name="Túi Tote Canvas Creative Mind"
+                                data-price="180000"
+                                data-img="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=200&q=80">
+                            + Thêm vào giỏ hàng
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="card product-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&w=600&q=80" alt="Sổ tay phác thảo">
+                        <span class="price-tag">150.000₫</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="product-cat">Văn phòng phẩm</span>
+                        <h3>Sổ Tay Phác Thảo Sketchbook A5</h3>
+                        <p>160 trang giấy định lượng 140gsm chống lem mực, bìa cứng ép kim.</p>
+                        <button class="btn btn-primary btn-full add-to-cart-btn"
+                                data-id="sp5"
+                                data-name="Sổ Tay Phác Thảo Sketchbook A5"
+                                data-price="150000"
+                                data-img="https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&w=200&q=80">
+                            + Thêm vào giỏ hàng
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="card product-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?auto=format&fit=crop&w=600&q=80" alt="Bộ Icon 3D">
+                        <span class="price-tag">250.000₫</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="product-cat">Tài nguyên số (PNG/Blender)</span>
+                        <h3>Bộ 50 Icon 3D Studio Render</h3>
+                        <p>File PNG độ phân giải 4K nền trong suốt kèm file nguồn Blender gốc.</p>
+                        <button class="btn btn-primary btn-full add-to-cart-btn"
+                                data-id="sp6"
+                                data-name="Bộ 50 Icon 3D Studio Render"
+                                data-price="250000"
+                                data-img="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?auto=format&fit=crop&w=200&q=80">
+                            + Thêm vào giỏ hàng
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT & INFO SECTION ================= -->
+    <section id="about" class="section bg-light">
+        <div class="container about-grid">
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=700&q=80" alt="Không gian làm việc thiết kế">
+            </div>
+            <div class="about-content">
+                <span class="section-subtitle">THÔNG TIN SINH VIÊN THỰC HIỆN</span>
+                <h2>Kết hợp tư duy thiết kế & phát triển Web hiện đại</h2>
+                <p>Trang web này được xây dựng cho bài tập lớn học phần <strong>Thiết kế Web và Triển khai HTPM (FIT4014)</strong> tại Trường Đại học Đại Nam.</p>
+                <ul class="info-list">
+                    <li><strong>Họ và tên:</strong>Ma Tráng Pao</li>
+                    <li><strong>Mã sinh viên:</strong> 2071020150</li>
+                    <li><strong>Lớp:</strong> cntt-20-02</li>
+                    <li><strong>Giảng viên hướng dẫn:</strong> ThS. Lê Thái Bảo</li>
+                </ul>
+                <div class="skills-tags">
+                    <span>HTML5 Semantic</span>
+                    <span>CSS3 Flexbox & Grid</span>
+                    <span>Responsive Design</span>
+                    <span>JavaScript ES6</span>
+                    <span>GitHub Pages</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section id="contact" class="section">
+        <div class="container contact-wrapper">
+            <div class="contact-info">
+                <span class="section-subtitle">LIÊN HỆ HỢP TÁC</span>
+                <h2>Gửi yêu cầu thiết kế hoặc đặt hàng theo yêu cầu</h2>
+                <p>Bạn muốn đặt thiết kế website, bộ nhận diện thương hiệu hoặc đặt in ấn phẩm kích thước riêng? Hãy để lại lời nhắn.</p>
+                <div class="contact-details">
+                    <p><strong>Email:</strong> matrangpao14@gmai.com</p>
+                    <p><strong>Điện thoại:</strong> 0384709108</p>
+                    <p><strong>Địa chỉ:</strong> Khoa CNTT, Đại học Đại Nam, Hà Đông, Hà Nội</p>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="senderName">Họ và tên *</label>
+                    <input type="text" id="senderName" required placeholder="Nhập họ tên của bạn...">
+                </div>
+                <div class="form-group">
+                    <label for="senderEmail">Email liên hệ *</label>
+                    <input type="email" id="senderEmail" required placeholder="email@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Nội dung yêu cầu *</label>
+                    <textarea id="message" rows="4" required placeholder="Mô tả dự án hoặc sản phẩm bạn quan tâm..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Gửi tin nhắn</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div>
+                <h3>pao shoop Studio</h3>
+                <p>Bài tập lớn A3 - FIT4014 Thiết kế Web và Triển khai HTPM.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/[THAY_GITHUB_USER]" target="_blank">GitHub Repository</a>
+                <a href="#home">Lên đầu trang ↑</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Ma tráng Pao - MSV: 2071020150. Đại học Đại Nam.</p>
+        </div>
+    </footer>
+
+    <!-- ================= SLIDE-OVER CART (GIỎ HÀNG TRƯỢT) ================= -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3>Giỏ hàng của bạn</h3>
+            <button class="close-btn" id="closeCartBtn">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItemsContainer">
+            <!-- Sản phẩm trong giỏ sẽ được render bằng JS -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Tổng cộng:</span>
+                <strong id="cartTotalPrice">0₫</strong>
+            </div>
+            <button class="btn btn-primary btn-full" id="checkoutBtn">Tiến hành đặt hàng</button>
+        </div>
+    </aside>
+
+    <!-- ================= MODAL XEM CHI TIẾT DỰ ÁN ================= -->
+    <div class="modal" id="detailModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModalBtn">&times;</button>
+            <img id="modalImg" src="" alt="Chi tiết dự án">
+            <div class="modal-body">
+                <span class="card-badge" id="modalCategory"></span>
+                <h3 id="modalTitle"></h3>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast thông báo -->
+    <div class="toast" id="toastNotification">Đã thêm sản phẩm vào giỏ hàng!</div>
+
+    <!-- Liên kết file JavaScript tách riêng -->
+    <script src="script.js"></script>
+</body>
+</html>

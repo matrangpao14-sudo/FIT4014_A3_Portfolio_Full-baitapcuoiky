@@ -6,8 +6,8 @@
 
 ---
 
-## 1. Mục đích sử dụng AI
-Sử dụng AI hỗ trợ phân tích yêu cầu đề tài Portfolio kết hợp bán hàng, tách cấu trúc mã nguồn chuẩn 3 lớp (`index.html`, `style.css`, `script.js`), tối ưu giao diện Responsive cho màn hình rộng/hẹp và chuẩn hóa tài liệu bàn giao theo Rubric A3.
+## 1. Mục đích sử dụng A
+em có sử dụng AI để tham khảo  Portfolio kết hợp bán hàng, tách cấu trúc mã nguồn chuẩn 3 lớp (`index.html`, `style.css`, `script.js`), tối ưu giao diện Responsive cho màn hình rộng/hẹp và chuẩn hóa tài liệu bàn giao theo Rubric A3.
 
 ## 2. Nhật ký các phiên làm việc chính
 * **Phiên 1:** Lên ý tưởng chủ đề *"Portfolio & Art Print Store"*, xác định 4 câu hỏi định hướng trước khi viết mã (Đối tượng xem, hành động chính, nội dung trang web, tiêu chí kiểm thử).
@@ -15,4 +15,4 @@ Sử dụng AI hỗ trợ phân tích yêu cầu đề tài Portfolio kết hợ
 * **Phiên 3:** Hoàn thiện tài liệu `README.md` và `AI_LOG.md` phục vụ việc nộp bài trên hệ thống LMS và GitHub Pages.
 
 ## 3. Cam kết của sinh viên
-Sinh viên đã trực tiếp kiểm tra mã nguồn, chỉnh sửa thông tin cá nhân và kiểm thử thực tế trên trình duyệt trước khi bàn giao.
+em đã kiểm tra qua mã nguồn, chỉnh sửa thông tin cá nhân và kiểm thử.

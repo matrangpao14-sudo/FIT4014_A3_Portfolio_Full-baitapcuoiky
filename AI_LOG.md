@@ -15,4 +15,4 @@ em có sử dụng AI để tham khảo  Portfolio kết hợp bán hàng, tách
 * **Phiên 3:** Hoàn thiện tài liệu `README.md` và `AI_LOG.md` phục vụ việc nộp bài trên hệ thống LMS và GitHub Pages.
 
 ## 3. Cam kết của sinh viên
-em đã kiểm tra qua mã nguồn, chỉnh sửa thông tin cá nhân và kiểm thử.
+em đã kiểm tra qua mã nguồn, và kiểm thử.

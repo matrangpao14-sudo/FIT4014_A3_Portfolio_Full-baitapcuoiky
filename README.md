@@ -17,7 +17,3 @@
 └── AI_LOG.md       # Nhật ký ghi nhận quá trình sử dụng công cụ AI hỗ trợ
 ```
 
-## 2. Hướng dẫn chạy và triển khai lên GitHub Pages
-1. Mở tệp `index.html`, tìm và thay thế các cụm từ đánh dấu `[THAY_...]` bằng thông tin cá nhân của bạn.
-2. Tải toàn bộ 5 tệp (`index.html`, `style.css`, `script.js`, `README.md`, `AI_LOG.md`) lên kho lưu trữ (Repository) công khai trên GitHub.
-3. Vào **Settings > Pages**, chọn Branch `main` và nhấn **Save** để nhận đường dẫn URL hoạt động.

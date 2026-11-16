@@ -7,7 +7,7 @@
 ---
 
 ## 1. Mục đích sử dụng A
-em có sử dụng AI để tham khảo  Portfolio kết hợp bán hàng, tách cấu trúc mã nguồn chuẩn 3 lớp (`index.html`, `style.css`, `script.js`), tối ưu giao diện Responsive cho màn hình rộng/hẹp và chuẩn hóa tài liệu bàn giao theo Rubric A3.
+em có sử dụng AI để tham khảo  Portfolio kết hợp bán hàng, tách cấu trúc mã nguồn chuẩn 3 lớp (`index.html`, `style.css`, `script.js`), tối ưu giao diện Responsive cho màn hình rộng/hẹp và chuẩn hóa tài liệu bàn giao.
 
 ## 2. Nhật ký các phiên làm việc chính
 * **Phiên 1:** Lên ý tưởng chủ đề *"Portfolio & Art Print Store"*, xác định 4 câu hỏi định hướng trước khi viết mã (Đối tượng xem, hành động chính, nội dung trang web, tiêu chí kiểm thử).

@@ -16,4 +16,5 @@
 ├── README.md       # Tài liệu giới thiệu và hướng dẫn triển khai
 └── AI_LOG.md       # Nhật ký ghi nhận quá trình sử dụng công cụ AI hỗ trợ
 ```
-
+## triển khai link (githuck page)
+https://matrangpao14-sudo.github.io/FIT4014_A3_Portfolio_Full-baitapcuoiky/
